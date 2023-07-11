@@ -31,6 +31,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+#vi mode
+set -o vi
+
 # https://code.mendhak.com/simple-bash-prompt-for-developers-ps1-git/
 function parse_git_dirty {
   [[ $(git status --porcelain 2> /dev/null) ]] && echo "*"
