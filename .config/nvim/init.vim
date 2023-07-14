@@ -8,3 +8,4 @@ set autoindent
 set smartindent
 
 inoremap { {<Enter>}<Esc>O
+inoremap printf printf("");<Esc>hhi
