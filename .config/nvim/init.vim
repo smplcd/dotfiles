@@ -9,3 +9,6 @@ set smartindent
 
 inoremap { {<Enter>}<Esc>O
 inoremap printf printf("");<Esc>hhi
+
+map <C-j> <C-d>
+map <C-k> <C-u>
