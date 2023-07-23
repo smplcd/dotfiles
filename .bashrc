@@ -28,6 +28,11 @@ if [ -x /usr/bin/dircolors ]; then
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
 fi
+# if on WSL2
+if [ -d "/mnt/c/Windows" ]
+then
+        export WHOME="/mnt/c/Users/gamxr/"
+fi
 
 #vi mode
 set -o vi
