@@ -13,6 +13,7 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 alias lat='ls -T'
 alias la='ls -a'
 alias ls='exa -l'
+alias sadate='date +%j/%y'
 
 # Machine-specific
 if [ -d "/mnt/c/Windows" ]
