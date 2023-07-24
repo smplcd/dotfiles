@@ -10,12 +10,11 @@ export XDG_CONFIG_HOME='$HOME/.config'
 alias mkd="mkdir -pv"
 alias v="nvim"
 alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
-# some more ls aliases
 alias lat='ls -T'
 alias la='ls -a'
 alias ls='exa -l'
 
-# if on WSL2
+# Machine-specific
 if [ -d "/mnt/c/Windows" ]
 then
         export WHOME="/mnt/c/Users/gamxr/"
@@ -32,4 +31,4 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
 }
 
-export PS1="\[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\e[0;31m[\e[0;34m\u@\h \e[0;32m\w\e[0;00m\e[0;31m]\e[0;33m\$(parse_git_branch)\e[0;00m \$ "
