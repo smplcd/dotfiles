@@ -20,13 +20,7 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 alias lat='ls -T'
 alias la='ls -a'
 alias ls='exa -l'
-# default bash config for color support in cmdl programs
-if [ -x /usr/bin/dircolors ]; then
-    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
-fi
+
 # if on WSL2
 if [ -d "/mnt/c/Windows" ]
 then
