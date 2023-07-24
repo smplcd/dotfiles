@@ -17,13 +17,12 @@ alias mkd="mkdir -pv"
 alias v="nvim"
 alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias lat='ls -T'
+alias la='ls -a'
+alias ls='exa -l'
 # default bash config for color support in cmdl programs
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
