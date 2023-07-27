@@ -5,15 +5,17 @@ shopt -s checkwinsize
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 export XDG_CONFIG_HOME='$HOME/.config'
+export PATH="$HOME/.local/bin:$PATH"
+export EDITOR="nvim"
 
 # Aliases
 alias mkd="mkdir -pv"
 alias v="nvim"
 alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
-alias lat='ls -T'
-alias la='ls -a'
-alias ls='exa -l'
-alias sadate='date +%j/%y'
+alias lat='la -T'
+alias la='ll -a'
+alias ll='ls -lF'
+alias sadate='date +%j/%Y'
 
 # Machine-specific
 if [ -d "/mnt/c/Windows" ]
@@ -33,3 +35,4 @@ function parse_git_branch {
 }
 
 export PS1='\e[0;31m[\e[0;34m\u@\h \e[0;32m\w\e[0;00m\e[0;31m]\e[0;33m`parse_git_branch`\e[0;00m \$ '
+

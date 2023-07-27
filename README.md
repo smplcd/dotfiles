@@ -6,5 +6,6 @@ git clone --bare git@github.com:smplcd/dotfiles.git $HOME/.dot/
 alias dot="/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME"
 dot config status.showUntrackedFiles no
 dot restore --staged .
+dot restore .
 source "$HOME/.bashrc"
 ```
