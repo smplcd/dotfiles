@@ -1,0 +1,6 @@
+"$HOME/.local/bin/audiokeys mute"
+    XF86AudioMute
+"$HOME/.local/bin/audiokeys lower"
+    XF86AudioLowerVolume
+"$HOME/.local/bin/audiokeys raise"
+    XF86AudioRaiseVolume

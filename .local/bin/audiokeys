@@ -1,0 +1,13 @@
+#!/bin/sh
+STEP=5
+
+if [ $1 == "mute" ]; then
+    amixer set Master toggle > /dev/null
+elif [ $1 == "raise" ]; then
+    amixer set Master ${STEP}%+ > /dev/null
+elif [ $1 == "lower" ]; then
+    amixer set Master ${STEP}%- > /dev/null
+else
+    echo "Unrecognized argument: $1\nUsage: audiokeys <mute|lower|raise>"
+    exit 2
+fi
