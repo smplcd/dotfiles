@@ -10,6 +10,7 @@ export EDITOR="nvim"
 
 # Aliases
 alias mkd="mkdir -pv"
+alias nvim="nvim -u ${XDG_CONFIG_HOME}/nvim/init.lua"
 alias v="nvim"
 alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 alias lat='la -T'
