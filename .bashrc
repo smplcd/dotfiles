@@ -8,9 +8,8 @@ export XDG_CONFIG_HOME='$HOME/.config'
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
 
-# Aliases
+# aliases
 alias mkd="mkdir -p"
-alias nvim="nvim -u ${XDG_CONFIG_HOME}/nvim/init.lua"
 alias v="nvim"
 alias dot='/usr/local/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 alias lat='la -T'
@@ -19,4 +18,7 @@ alias ll='ls -lF'
 alias sadate='date +%j/%Y'
 
 set -o vi
-export PS1='\e[0;31m[\e[0;32m\h \e[0;34m\W\e[0;31m]\e[0;00m\$ '
+
+# ricing
+ufetch
+export PS1='\e[0;31m[\e[0;33m\h \e[0;34m\W\e[0;31m]\e[0;00m\$ '
