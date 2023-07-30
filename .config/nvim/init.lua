@@ -18,12 +18,19 @@ vim.keymap.set("n", "<C-k>", "<C-u>")
 require('packer').startup(function(use)
 	-- Packer can manage itself
 	use 'wbthomason/packer.nvim'
+	use { "ellisonleao/gruvbox.nvim" }
 
 	use {
 		'nvim-telescope/telescope.nvim', tag = '0.1.2',
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 end)
+
+-- color
+vim.o.background = "dark"
+vim.cmd([[colorscheme gruvbox]])
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 -- telecope
 local telecmd = require('telescope.builtin')
