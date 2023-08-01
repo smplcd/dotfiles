@@ -17,4 +17,5 @@ compinit
 
 # ricing
 ufetch
-export PS1=$'\e[0;31m[\e[0;33m%m \e[0;34m%1~\e[0;31m]\e[0;00m\$ '
+autoload -U colors && colors
+export PS1="%{$fg[red]%}[%{$fg[yellow]%}%m %{$fg[blue]%}%1~%{$fg[red]%}]%{$reset_color%}\$ "

@@ -16,4 +16,5 @@ set -o vi
 
 # ricing
 ufetch
-export PS1='\e[0;31m[\e[0;33m\h \e[0;34m\W\e[0;31m]\e[0;00m\$ '
+# export PS1='[\h \W]\$ ' /* without color for clarity */
+export PS1='\[\e[31m\][\[\e[33m\]\h \[\e[34m\]\W\[\e[31m\]]\[\e[m\]\$ '
