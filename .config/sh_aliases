@@ -1,0 +1,9 @@
+alias mkd='mkdir -p'
+alias v="nvim -u $XDG_CONFIG_HOME/nvim/init.lua"
+alias dot="/usr/local/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME"
+alias lat='la -T'
+alias la='ll -a'
+alias ll='ls -lF'
+alias sadate='date +%j/%Y'
+alias newsboat="newsboat -C $XDG_CONFIG_HOME/newsboat/config -u $XDG_DATA_HOME/newsboat/urls"
+alias surf='surf -fgIMNs https://www.4get.ca'
