@@ -1,0 +1,14 @@
+directory: /home/smplcd/media/music/organized
+library: /home/smplcd/media/music/organized/library.db
+
+plugins: fetchart embedart
+
+import:
+  write: yes
+  move: yes
+
+original_date: yes
+
+paths:
+  default: $albumartist/$album%aunique{}/$track - $title
+  singleton: $artist/Singles/$title
